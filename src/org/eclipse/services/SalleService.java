@@ -12,9 +12,9 @@ public class SalleService implements IDao<Salle> {
 	
 	public SalleService() {
 		salles = new ArrayList<Salle>();
-		salles.add(new Salle(1, "A", "Salle 1"));
-		salles.add(new Salle(2, "B", "Salle 2"));
-		salles.add(new Salle(3, "C", "Salle 3"));
+//		salles.add(new Salle(1, "A", "Salle 1"));
+//		salles.add(new Salle(2, "B", "Salle 2"));
+//		salles.add(new Salle(3, "C", "Salle 3"));
 	}
 	
 	@Override
@@ -51,6 +51,10 @@ public class SalleService implements IDao<Salle> {
 	@Override
 	public List<Salle> findAll() {
 		return salles;
+	}
+	
+	public void removeAll() {
+		salles.clear();
 	}
 
 }
